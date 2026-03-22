@@ -23,7 +23,7 @@ export default class ProductCard {
   }
 
   fillCard() {
-    this.container.querySelector('img.card__image').src = `./assets/images/products/${this.product.image}`;
+    this.container.querySelector('img.card__image').src = `../assets/images/products/${this.product.image}`;
     this.container.querySelector('span.card__price').innerHTML = `€${this.product.price.toFixed(2)}`;
     this.container.querySelector('div.card__title').innerHTML = `${this.product.name}`;
   }
