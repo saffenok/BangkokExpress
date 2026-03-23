@@ -12,7 +12,7 @@ export default class ProductCard {
         <div class="card__body">
           <div class="card__title">NAME</div>
           <button type="button" class="card__button">
-            <img src="../assets/images/icons/plus-icon.svg" alt="icon">
+            <img src="./assets/images/icons/plus-icon.svg" alt="icon">
           </button>
         </div>
       </div>
@@ -23,7 +23,7 @@ export default class ProductCard {
   }
 
   fillCard() {
-    this.container.querySelector('img.card__image').src = `../assets/images/products/${this.product.image}`;
+    this.container.querySelector('img.card__image').src = `./assets/images/products/${this.product.image}`;
     this.container.querySelector('span.card__price').innerHTML = `€${this.product.price.toFixed(2)}`;
     this.container.querySelector('div.card__title').innerHTML = `${this.product.name}`;
   }
